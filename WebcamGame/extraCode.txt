@@ -1,0 +1,19 @@
+//////////////////////////////////////OTHER WAY TO RELABELLING////////////////////////////////////////
+/*
+//This set will contain only the final labels after pass 2
+    TreeSet<Integer> remainingLabels = new TreeSet();
+    
+    // Maps label with the number of pixels having this label
+    Map<Integer, Integer>  labelCount = new HashMap();
+
+    // Relabel each label equivalent list 
+    for (int i=1; i<labelsEquivalences.size(); ++i ) {
+      
+      TreeSet<Integer> t = labelsEquivalences.get(i);
+      int min=t.first();
+      for (Integer j : t){
+        min = Math.min(labelsEquivalences.get(j).first(),min); 
+      }
+      t.add(min);
+    }
+*/
